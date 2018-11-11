@@ -15,7 +15,7 @@ resource "aws_instance" "bastion_server_a" {
   user_data = <<-EOF
   #!/bin/bash
   sudo apt-get update
-  sudo apt-get upgrade
+  sudo apt-get upgrade 
   EOF
 }
 
@@ -104,3 +104,4 @@ resource "aws_db_instance" "private-DB" {
   vpc_security_group_ids = ["${aws_security_group.DB_server.id}"]
   skip_final_snapshot    = true
 }
+

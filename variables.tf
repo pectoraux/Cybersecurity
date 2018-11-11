@@ -4,17 +4,15 @@ variable "region" {
 }
 
 variable "access_key" {
-  description = "The aws access key."
-  default     = ""
+  description = "The aws access key." 
 }
 
 variable "secret_key" {
-  description = "The aws secret key."
-  default     = ""
+  description = "The aws secret key." 
 }
 
 variable "pem_key" {
-  default     = "udacity_student"
+  default     = "udacity_student2"
   description = "ssh key for EC2 machines"
 }
 

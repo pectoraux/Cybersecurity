@@ -11,7 +11,7 @@ sudo apt-get -y install apache2 libapache2-mod-wsgi mysql-client python python-p
 # Linkage for datasploit on Ubuntu
 sudo ldconfig -v
 
-# Pip requirments
+# Pip requirements
 pip install flask flask-mysql flask-wtf pip flask-bootstrap datasploit
 
 # Symbolic Link for WSGI App
@@ -34,7 +34,7 @@ WSGIScriptAlias / /var/www/html/resources/app.wsgi
 # Restart Apache
 sudo apachectl restart
 
-# Sleep 5 min just incase DB takes longer to create
+# Sleep 5 min just in case DB takes longer to create
 sleep 300
 
 ### Set up DB
@@ -67,4 +67,3 @@ unset DB
 
 # Purge bootstrap file
 sudo rm /tmp/bootstrap.sh
-

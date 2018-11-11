@@ -15,8 +15,8 @@ mysql = MySQL()
 bootstrap = Bootstrap(app)
 
 app.config['SECRET_KEY'] = 'mjn@3m#2!!k3mklkm3k4lk3m4m2$!!'
-app.config['MYSQL_DATABASE_USER'] = 'server'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'server_password'
+app.config['MYSQL_DATABASE_USER'] = 'serverAdmin'
+app.config['MYSQL_DATABASE_PASSWORD'] = '324neWWEkdn31ejkjrr'
 app.config['MYSQL_DATABASE_DB'] = 'p2db'
 app.config['MYSQL_DATABASE_HOST'] = 'database'
 

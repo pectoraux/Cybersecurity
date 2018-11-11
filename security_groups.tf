@@ -45,7 +45,7 @@ resource "aws_security_group" "Webserver_zone_a" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  # Outgoing connectinogs
+  # Outgoing connections
   egress {
     from_port   = 0
     to_port     = 0
@@ -78,7 +78,7 @@ resource "aws_security_group" "Webserver_zone_b" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  # Outgoing connectinogs
+  # Outgoing connections
   egress {
     from_port   = 0
     to_port     = 0
@@ -100,10 +100,10 @@ resource "aws_security_group" "bastion_server" {
     protocol    = "TCP"
     cidr_blocks = ["0.0.0.0/0"]
 
-    # cidr_blocks = ["YOUR-IP/32"]
+    // cidr_blocks = ["107.191.38.245/32"]
   }
 
-  # Outgoing connectinogs
+  # Outgoing connections
   egress {
     from_port   = 0
     to_port     = 0
